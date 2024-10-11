@@ -2,5 +2,6 @@ import os
 
 class Config:
     SECRET_KEY = 'tu_clave_secreta_aqui'
-    MONGO_URI = "mongodb+srv://davidtt083:12345qwerty@chatbot01.k9en0.mongodb.net/usuarios?retryWrites=true&w=majority&appName=chatbot01"
+    SQLALCHEMY_DATABASE_URI = 'mysql+mysqldb://asistentev01:Mikiztli1@asistentev01.mysql.pythonanywhere-services.com/asistentev01$usuarios'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
     GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
